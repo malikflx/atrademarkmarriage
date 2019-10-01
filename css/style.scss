@@ -1,0 +1,167 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+}
+
+/***GRID***/
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+}
+
+/***HEADER***/
+header {
+  .full-width {
+    //height: 90px;
+    //overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    border-bottom: solid #D3D3D3 0.5px;
+    box-shadow: 10px 10px 10px #5271FF;
+    #logo {
+      img {
+        width: 150px;
+      }
+    }
+  nav {
+    font-family: 'Cinzel', serif;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      top: 20px;
+      li {
+        float: left;
+        //padding-left: 10px;
+        //padding-right: 10px;
+        font-size: 18px;
+        //background: red;
+        a {
+          display: block;
+          padding: 8px;
+          text-decoration: none;
+          color: inherit;
+          //background-color: blue;
+          width: 100%;
+        }
+        :hover {
+          color: #5271ff;
+        }
+      }
+      button {
+        float: left;
+        position: relative;
+        //bottom: 15px;
+        left: 700px;
+        background: linear-gradient(90deg, #5271FF, #cb6ce6);
+        color: #FFF;
+        border-radius: 6px;
+        text-decoration: none;
+        margin: 0;
+        padding: 0px;
+        a {
+          display: block;
+          //background-color: red;
+          text-decoration: none;
+          color: #FFF;
+          padding: 12px;
+          font-size: 18px;
+        }
+        :hover {
+          background: linear-gradient(90deg, #cb6ce6, #5271FF);
+          color: #211A23;
+        }
+     }
+    }
+  }
+  }
+}
+
+.title-font {
+  font-family: 'Kaushan Script', cursive;
+}
+
+/***BANNER STYLES***/
+#banner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #FFF;
+  height: 400px;
+  margin-top: 90px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(rgba(0, 0, 0 , 0.3), rgba(0, 0, 0, 0.3)), url(/img/family.png);
+  background-size: contain;
+  background-repeat: repeat;
+  .title-font {
+    font-size: 64px;
+  }
+}
+
+/***CONTACT FORM***/
+
+/***ABOUT***/
+#about {
+  height: 400px;
+  //margin-top: 125px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .bio {
+    width: 50%;
+  }
+}
+
+
+/***FOOTER***/
+
+footer {
+  height: 100px;
+  background: linear-gradient(90deg, #5271FF, #cb6ce6);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  //padding-left: -50px;
+
+  .copyright {
+    padding-right: 10px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding-left: 0%;
+
+    ul {
+      display: flex;
+      list-style: none;
+      //background-color: white;
+      margin-left: -30px;
+    }
+    li {
+      padding-left: 5px;
+      padding-right:5px;
+    }
+    img {
+      width: 32px;
+    }
+  }
+
+}
